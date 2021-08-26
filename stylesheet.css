@@ -1,0 +1,298 @@
+*{
+  box-sizing : border-box;
+}
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear:left;
+}
+
+.container {
+  max-width:1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(/HTMLCSSGrupC9ProgatexKotakode/header.jpg);
+    background-size: cover;
+    color: black;
+    text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 1;
+  font-size: 45px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  color:black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.top-wrapper p {
+  opacity: 1;
+  margin-bottom: 3px;
+  font-style:  bold;
+  font-size: 20px;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color:  #3b5998;
+}
+
+
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top :0;
+  z-index:10;
+}
+.tittle-header {
+ font-family: Impact, 'Haettenschweiler', Arial Narrow Bold, sans-serif;
+ color :white;
+ padding-top :0.5px;
+}
+  
+
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+#Home:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#CONTACT:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.heading:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#FITUR:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: inline-block;
+}
+
+/* Tambahkan CSS untuk menu-icon */
+.menu-icon{
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* Gantikan property display ke none */
+  display:  none
+}
+
+
+.lesson-wrapper {
+   
+  padding-bottom: 80px;
+  background-color:white;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 19%;
+  margin-right: 5px;
+  margin-left:5px;
+  
+}
+
+.lessons{
+  background-color: green;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: black;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: gray;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.ani {
+  border-radius: 50%;
+}
+
+.mesta {
+  border-radius: 50%;
+}
+
+.firman {
+  border-radius: 50%;
+}
+
+.prima {
+  border-radius: 50%;
+}
+
+.fadlan {
+  border-radius: 50%;
+}
+
+
+.tittle-header1 {
+  font-family: Impact, 'Haettenschweiler', Arial Narrow Bold, sans-serif;
+  color :black;
+  padding-top :0.5px;
+ }
+   
+
+/* flexbox */
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 60px 0px;
+  text-align: center;
+}
+li {
+  color: white;
+  height: 80px;
+  line-height: 80px;
+}
+ 
+.flex-list {
+  display: flex;
+}
+.flex-list li {
+  flex: auto;
+}
+
+/* Layout untuk Tablet */
+@media (max-width: 1000px) {
+  .flex-list {
+    flex-wrap: wrap;
+  }
+  .flex-list li {
+    width: 50%;
+  }
+}
+
+/* Layout untuk Smartphone */
+/* Tetapkan lebar breakpoint ke 670px dan di bawahnya ke media query */
+@media (max-width:670px) {
+  /* Tetapkan flex-direction milik .flex-list */
+  .flex-list{
+    flex-direction:column;
+  }
+  
+  /* Tetapkan margin dari .flex-list li ke 0 auto */
+  .flex-list li{
+    margin:auto;
+  }
+  
+}
